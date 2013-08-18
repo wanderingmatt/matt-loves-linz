@@ -1,0 +1,410 @@
+/* 
+FILENAME: globals.css
+DESCRIPTION: This stylesheet serves global declarations to all MattLovesLinz.com assets
+AUTHOR: Matthew Anderson -> manderson@onehub.com
+LAST MODIFIED DATE: 11.02.2008
+*/
+
+/* =SHARED */
+
+body {
+  background: #fff;
+  font: normal 16px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif; /* normalize font size across browsers */
+	color: #999;
+}
+
+a:link, a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #38235c;
+}
+	
+a:hover, a:active {
+  background-color: #9b91ad;
+  color: #fff;
+}
+
+a, strong, b { /* Straightens out OS X font rendering */
+  line-height: 19px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* =HEADER */
+
+#header {
+  background-color: #000;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.home #header {
+  background-image: url("../images/banner_home.png");
+}
+
+.how_we_met #header {
+  background-image: url("../images/banner_how_we_met.png");
+}
+
+.accommodations #header {
+  background-image: url("../images/banner_accommodations.png");
+}
+
+.registry #header {
+  background-image: url("../images/banner_registry.png");
+}
+
+.local_attractions #header {
+  background-image: url("../images/banner_local_attractions.png");
+}
+
+.photos #header {
+  background-image: url("../images/banner_photos.png");
+}
+
+#banner {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  height: 400px;
+}
+
+.home #banner {
+  height: 600px;
+}
+
+#banner #mark {
+  display: block;
+  background: transparent url("../images/mark_rev.png") no-repeat; 
+  width: 220px;
+  height: 144px;
+  margin-top: 18px;
+}
+
+#banner #mark img {
+  display: block;
+  width: 0;
+}
+
+#menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#menu ul {
+  overflow: hidden;
+  margin: 0;
+}
+
+#menu li {
+  float: left;
+}
+
+#menu li a, #menu li.selected {
+  display: block;
+  padding: 15px 20px 5px 20px;
+  font-size: .75em;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ddd;
+}
+
+#menu li a:hover {
+  background: transparent url("../images/bg_menu_hover.png") repeat-x;
+  color: #fff;
+}
+
+#menu li.selected {
+  background: #fff url("../images/bg_menu_selected.png") repeat-x;
+  color: #000;
+}
+
+#menu li.selected em {
+  font-style: normal;
+}
+
+#header hr {
+  display: none;
+}
+
+/* =LAYOUT */
+
+#wrapper {
+/*  background: url("../images/16_col.png") center top repeat-y;*/
+  background: #fff;
+}
+
+#content {
+  clear: both;
+  overflow: hidden;
+}
+
+#content p, #content ul, #content ol, #content .vcard {
+  font-size: .875em;
+}
+
+#content strong {
+  color: #666;
+}
+
+#content em.caveat {
+  display: block;
+  color: #bbb;
+}
+
+.intro {
+  padding: 40px 0;
+}
+
+.row {
+  clear: both;
+  overflow: hidden;
+  padding: 19px 0 20px 0;
+  border-top: 1px solid #eee;
+}
+
+.first {
+  border-top: 0;
+}
+
+/* =HEADINGS */
+
+h1, h2, h4, h5 {
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-size: 3em;
+  line-height: 40px;
+  color: #666;
+}
+
+h2.supporting {
+  font-size: 2em;
+  color: #999;
+}
+
+h3 {
+  clear: both;
+  background: url("../images/bg_h3.png") no-repeat;
+  padding: 10px;
+  font-size: .75em;
+  text-transform: uppercase;
+  color: #cdc8d6;
+}
+
+h4 {
+  font-size: 1.3em;
+  line-height: 20px;
+  color: #666;
+}
+
+h4 em {
+  display: block;
+  margin-bottom: 20px;
+  font-size: .675em;
+  font-weight: normal;
+  font-style: normal;
+  color: #999;
+}
+
+h5 {
+  margin-bottom: 20px;
+  color: #9b91ad;
+}
+
+/* =MICROFORMATS */
+
+.vcard {
+  color: #bbb;
+}
+
+/* =HOME */
+
+.home ul.sitemap {
+  list-style-type: disc;
+}
+
+/* =ACCOMODATIONS */
+
+.accommodations ol.steps {
+  list-style-type: decimal;
+}
+
+/* =REGISTRY */
+
+.registry a.logo {
+  background: transparent;
+  display: table-cell;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.registry a.logo img {
+  display: block;
+}
+
+.registry ul.actions {
+  margin-top: 10px;
+}
+
+.registry .flush {
+  text-align: right;
+}
+
+.registry .flush em {
+  font-style: normal;
+  color: #bbb;
+}
+
+/* =PHOTOS */
+
+.photos .album em.count {
+  margin-bottom: 20px;
+  font-size: .875em;
+  font-style: normal;
+}
+
+/* =HOW =WE =MET */
+
+.story p {
+  margin-bottom: 20px;
+}
+
+.story blockquote {
+  font: normal 1.2em "Hoefler Text", Georgia, serif;
+  line-height: 20px;
+  color: #666;
+}
+
+/* =THUMBNAILS */
+
+.thumbnail a {
+  display: block;
+  width: 200px;
+  height: 140px;
+  border: 10px solid #9b91ad;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.thumbnail a.boehms {
+  background-image: url("../images/thumbnail_boehms.jpg");
+}
+
+.thumbnail a.xxx {
+  background-image: url("../images/thumbnail_xxx.jpg");
+}
+
+.thumbnail a.twelfth_avenue {
+  background-image: url("../images/thumbnail_twelfth_avenue.jpg");
+}
+
+.thumbnail a.market {
+  background-image: url("../images/thumbnail_market.jpg");
+}
+
+.thumbnail a.underground {
+  background-image: url("../images/thumbnail_underground.jpg");
+}
+
+.thumbnail a.ducks {
+  background-image: url("../images/thumbnail_ducks.jpg");
+}
+
+.thumbnail a.snoqualmie {
+  background-image: url("../images/thumbnail_snoqualmie.jpg");
+}
+
+.thumbnail a.proposal {
+  background-image: url("../images/thumbnail_proposal.jpg");
+}
+
+.thumbnail a.getting_engaged {
+  background-image: url("../images/thumbnail_getting_engaged.jpg");
+}
+
+.thumbnail a.condo {
+  background-image: url("../images/thumbnail_condo.jpg");
+}
+
+.thumbnail a.same_shot {
+  background-image: url("../images/thumbnail_same_shot.jpg");
+}
+
+.thumbnail a:hover {
+  background-position: -200px 0;
+  border: 10px solid #cdc8d6;
+}
+
+.thumbnail a img {
+  display: none;
+}
+
+/* =ACTIONS */
+
+ul.actions {
+  margin-top: 20px;
+}
+
+.gutter ul.actions {
+  margin-top: 0;
+}
+
+ul.actions li {
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.gutter ul.actions li {
+  font-size: .875em;
+}
+
+ul.actions li.view_map {
+  background-image: url("../images/icons/push_pin.png");
+}
+
+ul.actions li.view_website {
+  background-image: url("../images/icons/computer.png");
+}
+
+ul.actions li.view_thumbnail {
+  background-image: url("../images/icons/images.png");
+}
+
+ul.actions li.view_slideshow {
+  background-image: url("../images/icons/play.png");
+}
+
+/* =BUTTONS */
+
+.buttons {
+  text-align: right;
+}
+
+a.button {
+  padding: 3px 8px;
+  border: 1px solid #cdc8d6;
+  font-size: .875em;
+  text-align: right;
+  text-decoration: none;
+}
+
+a.button:hover {
+  background-color: #9b91ad;
+  color: #fff;
+}
+
+/* =FOOTER */
+
+#footer {
+  background-color: #000;
+  margin-top: 40px;
+  padding: 20px;
+}
